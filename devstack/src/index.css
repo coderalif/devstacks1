@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ===== BRAND GRADIENT - Change here to retheme the whole UI ===== */
+:root {
+  --brand-gradient: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+  --brand-gradient-text: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--brand-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient background utility */
+.gradient-bg {
+  background: var(--brand-gradient);
+}
+
+/* Gradient border button */
+.btn-gradient {
+  background: var(--brand-gradient);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+.brand-mark {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #c43bcf, #ef3c88);
+  color: white;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.hero-section {
+  background: radial-gradient(circle at 76% 45%, rgba(246, 220, 255, 0.35), transparent 21rem), #fff;
+}
+
+.hero-title {
+  margin: 0;
+  color: #141d2f;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.hero-title span,
+.section-title span {
+  background: linear-gradient(90deg, #ff4b35, #cb25bd);
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-art-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-art {
+  width: min(100%, 24rem);
+  filter: drop-shadow(0 20px 20px rgba(109, 63, 255, 0.12));
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.technology-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.footer-heading {
+  margin: 0 0 0.9rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+footer a {
+  display: block;
+  margin-top: 0.65rem;
+  color: #64748b;
+  font-size: 0.68rem;
+}
+
+footer a:hover {
+  color: #ec4899;
+}
+
+@media (min-width: 1024px) {
+  .technology-layout {
+    grid-template-columns: minmax(0, 1fr) 10.5rem;
+    align-items: start;
+  }
+}

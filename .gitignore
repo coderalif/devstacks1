@@ -1,0 +1,4 @@
+devstack/node_modules/
+devstack/dist/
+*.log
+.DS_Store
