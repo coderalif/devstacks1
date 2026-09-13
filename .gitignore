@@ -1,3 +1,8 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
 devstack/node_modules/
 devstack/dist/
 *.log

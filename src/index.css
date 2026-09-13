@@ -52,7 +52,7 @@ body {
   height: 18px;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 4px;
   background: linear-gradient(135deg, #c43bcf, #ef3c88);
   color: white;
   font-size: 8px;
@@ -65,7 +65,7 @@ body {
 
 .hero-title {
   margin: 0;
-  color: #141d2f;
+  color: #111827;
   font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.04em;
